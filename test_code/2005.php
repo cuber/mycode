@@ -1,0 +1,65 @@
+<?php 
+$xml = <<<XML
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<customer_id><![CDATA[10337237]]></customer_id>
+	<nick_name><![CDATA[英波一笑]]></nick_name>
+	<reviews>
+		<item>
+			<product_id><![CDATA[21047811]]></product_id>
+			<product_name><![CDATA[华图版?2012(最新版) 国家公务员录用考试专用教材-行政职业能力测验（赠国考备考名师精讲+五年真题智能模考光盘）+（赠高清课程代金券）]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/124928/tkUkHJlFFTcBiVyiPuEyRd8GZBs_/p03a/2423/http://comm.dangdang.com/review/reviewpost.php?product_id=21047811]]></url>
+		</item>
+		<item>
+			<product_id><![CDATA[21052832]]></product_id>
+			<product_name><![CDATA[2012华图版国家公务员录用考试辅导用书---申论历年真题及华图名师详解]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/124928/tkUkHJlFFTcBiVyiPuEyRd8GZBs_/p03a/2423/http://comm.dangdang.com/review/reviewpost.php?product_id=21052832]]></url>
+		</item>
+		<item>
+			<product_id><![CDATA[21052835]]></product_id>
+			<product_name><![CDATA[2012华图版国家公务员录用考试辅导用书---历年真题及华图名师详解]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/124928/tkUkHJlFFTcBiVyiPuEyRd8GZBs_/p03a/2423/http://comm.dangdang.com/review/reviewpost.php?product_id=21052835]]></url>
+		</item>
+		<item>
+			<product_id><![CDATA[22474238]]></product_id>
+			<product_name><![CDATA[2011-2012年中国银行业从业人员资格认证考试辅导用书-公共基础]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/124928/tkUkHJlFFTcBiVyiPuEyRd8GZBs_/p03a/2423/http://comm.dangdang.com/review/reviewpost.php?product_id=22474238]]></url>
+		</item>
+		<review_buy_url><![CDATA[http://a51.oadz.com/link/C/51/124927/35FPfzrZsxsR7wL--TcfiAvCrQM_/a/2423/http://comm.dangdang.com/review/reviewbuy.php]]></review_buy_url>
+	</reviews>
+	<wonderful_reviews>
+		<item>
+			<title><![CDATA[吾爱吾国，吾爱吾民]]></title>
+			<product_name><![CDATA[秘境不丹-不丹王太]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/129088/08.gEjlhrRLQLome3BEp3lb0Pec_/p03d/2423/http://comm.dangdang.com/member/myreviewdetail.php?review_id=16404405]]></url>
+			<author><![CDATA[小雨她]]></author>
+		</item>
+		<item>
+			<title><![CDATA[埋藏在信中的真实与谎言]]></title>
+			<product_name><![CDATA[往复书简]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/129088/08.gEjlhrRLQLome3BEp3lb0Pec_/p03d/2423/http://comm.dangdang.com/member/myreviewdetail.php?review_id=16401597]]></url>
+			<author><![CDATA[jesseme]]></author>
+		</item>
+		<item>
+			<title><![CDATA[天使降��人间]]></title>
+			<product_name><![CDATA[小公主(外国文学经]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/129088/08.gEjlhrRLQLome3BEp3lb0Pec_/p03d/2423/http://comm.dangdang.com/member/myreviewdetail.php?review_id=16397295]]></url>
+			<author><![CDATA[harrypo]]></author>
+		</item>
+		<item>
+			<title><![CDATA[换个角度看婚姻——读《开阔的婚姻》]]></title>
+			<product_name><![CDATA[开阔的婚姻(心灵导]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/129088/08.gEjlhrRLQLome3BEp3lb0Pec_/p03d/2423/http://comm.dangdang.com/member/myreviewdetail.php?review_id=16395899]]></url>
+			<author><![CDATA[夏逸绵]]></author>
+		</item>
+		<item>
+			<title><![CDATA[让人垂涎欲滴的那些美食——读《寻味日本》]]></title>
+			<product_name><![CDATA[寻味日本（世界美]]></product_name>
+			<url><![CDATA[http://a51.oadz.com/link/C/51/129088/08.gEjlhrRLQLome3BEp3lb0Pec_/p03d/2423/http://comm.dangdang.com/member/myreviewdetail.php?review_id=16392264]]></url>
+			<author><![CDATA[夏逸绵]]></author>
+		</item>
+		<wonderful_review_url><![CDATA[http://a51.oadz.com/link/C/51/124929/VVCJ1War45VuQV-PKHTnPPjNXrs_/a/2423/http://comm.dangdang.com/review/wonderfulreview.php]]></wonderful_review_url>
+	</wonderful_reviews>
+</root>
+XML;
+var_dump(simplexml_load_string($xml));

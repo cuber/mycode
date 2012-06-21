@@ -1,0 +1,18 @@
+dd.lo: /Users/Cube/tmp/php/ddext/trunk/dd/dd.cc
+	$(LIBTOOL) --mode=compile $(CXX)  -I. -I/Users/Cube/tmp/php/ddext/trunk/dd $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /Users/Cube/tmp/php/ddext/trunk/dd/dd.cc -o dd.lo 
+dd_cookie.lo: /Users/Cube/tmp/php/ddext/trunk/dd/dd_cookie.cc
+	$(LIBTOOL) --mode=compile $(CXX)  -I. -I/Users/Cube/tmp/php/ddext/trunk/dd $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /Users/Cube/tmp/php/ddext/trunk/dd/dd_cookie.cc -o dd_cookie.lo 
+base64.lo: /Users/Cube/tmp/php/ddext/trunk/dd/base64.cc
+	$(LIBTOOL) --mode=compile $(CXX)  -I. -I/Users/Cube/tmp/php/ddext/trunk/dd $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /Users/Cube/tmp/php/ddext/trunk/dd/base64.cc -o base64.lo 
+md5.lo: /Users/Cube/tmp/php/ddext/trunk/dd/md5.cc
+	$(LIBTOOL) --mode=compile $(CXX)  -I. -I/Users/Cube/tmp/php/ddext/trunk/dd $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /Users/Cube/tmp/php/ddext/trunk/dd/md5.cc -o md5.lo 
+dd_stat.lo: /Users/Cube/tmp/php/ddext/trunk/dd/dd_stat.cc
+	$(LIBTOOL) --mode=compile $(CXX)  -I. -I/Users/Cube/tmp/php/ddext/trunk/dd $(COMMON_FLAGS) $(CXXFLAGS_CLEAN) $(EXTRA_CXXFLAGS)  -c /Users/Cube/tmp/php/ddext/trunk/dd/dd_stat.cc -o dd_stat.lo 
+http.lo: /Users/Cube/tmp/php/ddext/trunk/dd/http.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/Cube/tmp/php/ddext/trunk/dd $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/Cube/tmp/php/ddext/trunk/dd/http.c -o http.lo 
+$(phplibdir)/dd.la: ./dd.la
+	$(LIBTOOL) --mode=install cp ./dd.la $(phplibdir)
+
+./dd.la: $(shared_objects_dd) $(DD_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_dd) $(DD_SHARED_LIBADD)
+
